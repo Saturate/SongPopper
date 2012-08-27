@@ -60,16 +60,17 @@ function onEvent(debuggeeId, message, params) {
 
 					$listItem = $('<li></li>');
 					$listItem.html(answer['artist'] + " - " + answer['title']);
+					_gaq.push(['_trackEvent', 'Answers', 'Is', answer['artist'] + " - " + answer['title']]);
 					$('.answers').append($listItem);
 					});
 				};
+				// Track when a list of answers is created
+				_gaq.push(['_trackEvent', 'Answers', 'Loaded']);
 			});
 		};
 
 	}
 }
-
-
 
 function parseURL(url) {
   var result = {};
@@ -84,3 +85,17 @@ function parseURL(url) {
   result.fragment = match[5];
   return result;
 }
+
+/*
+	Google Analytics for tracking use
+	More infomation: https://developer.chrome.com/trunk/extensions/tut_analytics.html
+	If you want access to the data just send me a message!
+ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34374614-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = 'https://ssl.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();

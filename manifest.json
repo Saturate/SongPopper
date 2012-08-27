@@ -1,7 +1,7 @@
 {
   "name": "SongPopper",
   "description": "Intercepts the correct awnsers and displays them to you for a good headstart",
-  "version": "0.1",
+  "version": "0.1.1",
   "permissions": [
     "tabs",
     "debugger",
@@ -15,6 +15,6 @@
     "default_title": "SongPopper"
   },
   "manifest_version": 2,
-  "content_security_policy": "default-src 'self'; script-src 'self'; connect-src https://*.appspot.com; img-src 'self' "
+  "content_security_policy": "default-src 'self'; script-src 'self' https://ssl.google-analytics.com; connect-src https://*.appspot.com https://ssl.google-analytics.com; img-src 'self' http://google-analytics.com; object-src 'self' "
 }
 
