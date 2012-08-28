@@ -1,0 +1,8 @@
+{
+  "chrome_extension_name": {
+    "message": "SongPopper"
+  },
+  "chrome_extension_description": {
+    "message": "Intercepts the correct awnsers and displays them to you for a good headstart"
+  }
+}

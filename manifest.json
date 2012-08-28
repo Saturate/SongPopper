@@ -1,20 +1,26 @@
 {
-  "name": "SongPopper",
-  "description": "Intercepts the correct awnsers and displays them to you for a good headstart",
-  "version": "0.1.1",
+  "name": "__MSG_chrome_extension_name__",
+  "description": "__MSG_chrome_extension_description__",
+  "version": "0.1.3",
+  "default_locale": "en",
   "permissions": [
     "tabs",
     "debugger",
 	"<all_urls>"
   ],
   "background": {
-    "scripts": ["main.js"]
+    "scripts": ["js/main.js"]
   },
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "img/icon-16.png",
     "default_title": "SongPopper"
   },
+  "icons" : {
+	"16" : "img/icon-16.png",
+    "48" : "img/icon-48.png",
+    "128" : "img/icon-128.png"
+  },
   "manifest_version": 2,
-  "content_security_policy": "default-src 'self'; script-src 'self' https://ssl.google-analytics.com; connect-src https://*.appspot.com https://ssl.google-analytics.com; img-src 'self' http://google-analytics.com; object-src 'self' "
+  "content_security_policy": "default-src 'self'; script-src 'self' https://ssl.google-analytics.com; connect-src https://*.appspot.com https://ssl.google-analytics.com; img-src 'self' http://www.google-analytics.com; object-src 'self' "
 }
 
