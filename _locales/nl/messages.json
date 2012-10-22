@@ -1,0 +1,20 @@
+{
+  "chrome_extension_name": {
+    "message": "SongPopper"
+  },
+  "chrome_extension_description": {
+    "message": "Onderschept de juiste antwoorden en toont ze, voor een flinke voorsprong."
+  },
+  "headers_start_title": {
+  	"message": "Start een spel..."
+  },
+  "headers_start_notice": {
+  	"message": "Open het spel en speel het, dan worden de liedjes hier getoond."
+  },
+  "headers_author_credit": {
+  	"message": "door Allan Kimmer Jensen"
+  },
+  "headers_previous": {
+  	"message": "Vorige"
+  }
+}
