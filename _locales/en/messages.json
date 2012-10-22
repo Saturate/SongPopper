@@ -4,5 +4,17 @@
   },
   "chrome_extension_description": {
     "message": "Intercepts the correct awnsers and displays them to you for a good headstart"
+  },
+  "headers_start_title": {
+  	"message": "Start a game..."
+  },
+  "headers_start_notice": {
+  	"message": "Open the game and play, when you do this your songs will be listed here."
+  },
+  "headers_author_credit": {
+  	"message": "By Allan Kimmer Jensen"
+  },
+  "headers_previous": {
+  	"message": "Previous"
   }
 }
