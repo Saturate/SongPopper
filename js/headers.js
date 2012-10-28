@@ -2,6 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// I18N
+$(function(){
+	document.title = chrome.i18n.getMessage('chrome_extension_name');
+	$('#intro>h1').html(chrome.i18n.getMessage('headers_start_title'));
+	$('#intro>p').html(chrome.i18n.getMessage('headers_start_notice'));
+	$('a.credit').html(chrome.i18n.getMessage('headers_author_credit'));
+});
+
 var tabId = parseInt(window.location.search.substring(1));
 
 window.addEventListener("load", function() {
@@ -50,7 +58,7 @@ function onEvent(debuggeeId, message, params) {
 			if( data.hasOwnProperty("quiz") ){
 				
 				$('#intro').hide();
-				$('.prev-category').html('Previous: ' + $('.category').html());
+				$('.prev-category').html(chrome.i18n.getMessage('headers_previous') + ': ' + $('.category').html());
 				$('.category').html( data['quiz']['genreName'] );
 				$('.answers li').appendTo('.prev-answers');
 				$(data['quiz']['questions']).each( function(){
