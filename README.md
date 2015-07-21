@@ -16,6 +16,7 @@ Just click the little node icon, if you are on a songpop page it will open a win
 
 ##Todo
 - Localize texts
+- Say goodbye to jQuery
 
 ##Contribute
 Just fork it and make a pull-request! Or if you have any ideas, make a issue!
