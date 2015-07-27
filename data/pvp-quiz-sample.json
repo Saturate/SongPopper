@@ -1,0 +1,79 @@
+[
+    {
+        "pvpTrackingId": "(REMOVED)",
+        "userPlaylistStars": 66,
+        "opponentId": "(REMOVED)",
+        "userPlaylistStarsLevel": 2,
+        "gameId": "(REMOVED)",
+        "pvpSource": "fb",
+        "gameMoves": [
+            {
+                "songName": "Right Here, Right Now",
+                "index": 0,
+                "songType": "title",
+                "songId": "781211283",
+                "result": "right",
+                "guessTime": 1300
+            },
+            {
+                "songName": "MGMT",
+                "index": 1,
+                "songType": "artist",
+                "songId": "129130",
+                "result": "right",
+                "guessTime": 900
+            },
+            {
+                "songName": "Stereo MC's",
+                "index": 2,
+                "songType": "artist",
+                "songId": "562363192",
+                "result": "right",
+                "guessTime": 800
+            },
+            {
+                "songName": "Electric Feel",
+                "index": 3,
+                "songType": "title",
+                "songId": "248057",
+                "result": "right",
+                "guessTime": 900
+            },
+            {
+                "songName": "Little Secrets",
+                "index": 4,
+                "songType": "title",
+                "songId": "128115",
+                "result": "right",
+                "guessTime": 1200
+            }
+        ],
+        "userStarLevel": 393,
+        "playlistId": "153427",
+        "gameResultCorrect": 5,
+        "playlistName": "Electronic",
+        "playlistMeta": "dance",
+        "gameType": "sent",
+        "gameResultScore": 21867,
+        "playlistType": "curated",
+        "eventName": "gameEndPvp",
+        "gameResultPlaylistStarLevelAwarded": 0,
+        "quizId": "127707406_1437569986.46297",
+        "gameResultPlaylistStarsAwarded": 3,
+        "gameDuration": 27,
+        "pvpGamesWeek": 0,
+        "sessionId": "(REMOVED)",
+        "pvpGamesLifetime": 0,
+        "eventTime": 1437570014,
+        "pvpIsNew": 1,
+        "gameMode": "pvp"
+    },
+    {
+        "userStarLevel": 393,
+        "pageSource": "ui.quiz::QuizScreen",
+        "pageName": "ui.quiz::QuizResultScreen",
+        "sessionId": "(REMOVED)",
+        "eventName": "pageView",
+        "eventTime": 1437570014
+    }
+]
