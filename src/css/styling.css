@@ -1,6 +1,18 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body {
+	height: 100%;
+}
 body {
 	word-wrap: break-word;
 	color: #fff;
+	margin: 0;
+    padding: 10px;
 	font-family: verdana;
 	text-shadow: 0 0 5px rgba(0,0,0,0.25);
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3fd5ee), color-stop(100%,#1b94cf)); /* Chrome,Safari4+ */
@@ -12,10 +24,20 @@ body {
   white-space: pre;
 }
 
-.category { font-size: 1.3em; }
-.answers { padding: 0 0 0 21px; }
-
-.prev-category { font-size: 0.6em; }
-.prev-answers { font-size: 0.6em; padding: 0 0 0 16px; }
-
-.credit { font-size: 0.6em; opacity: 0.5; position: absolute; bottom: 10; color: #fff; text-decoration: none; }
+.category { 
+	font-size: 1.3em;
+}
+.answers {
+	padding: 0 0 0 21px;
+}
+.hidden {
+	display: none;
+}
+.credit {
+	font-size: 0.6em;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 10px;
+	color: #fff;
+	text-decoration: none;
+}
