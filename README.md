@@ -14,9 +14,12 @@ If you don't do this, you will get a popup that says you need to install it from
 ##How To Use
 Just click the little node icon, if you are on a songpop page it will open a window that will display the correct answers. If you are on a other tab, it will open a new songpop tab.
 
-##Todo
+##TODO
 - Localize texts
 - Say goodbye to jQuery
+- Indicate what button is the rigth answer
+- Block quiz timeout requests
+- Intercept and fiddle with song answer times.
 
 ##Contribute
-Just fork it and make a pull-request! Or if you have any ideas, make a issue!
+Just fork it and make a pull-request! Or if you have any ideas, make an issue!

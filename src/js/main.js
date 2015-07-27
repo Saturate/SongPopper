@@ -26,12 +26,7 @@ function actionClicked(tab) {
 }
 
 
-	chrome.webRequest.onSendHeaders.addListener(function(details) { 
-		console.log('test from main.js', details);
-	},{
-		//urls: ["*://wam-mobile.appspot.com/quiz/get/*"]
-		urls: ["*://wam-mobile.appspot.com/user/flags/get/"]
-	});
+	
 
 function onAttach(tabId) {
 	if (chrome.extension.lastError) {
@@ -40,9 +35,19 @@ function onAttach(tabId) {
 	}
 
 	chrome.windows.create({
-		url: "headers.html?" + tabId,
+		url: "songpopper.html?" + tabId,
 		type: "popup",
 		width: 460,
 		height: 310
 	});
 }
+
+// Intercept guess POST request
+chrome.webRequest.onSendHeaders.addListener(function(details) { 
+	console.log('test from main.js', details);
+	// TODO, change the guess POST data to a better time
+
+},{
+	//urls: ["*://wam-mobile.appspot.com/quiz/get/*"]
+	urls: ["*://wam-mobile.appspot.com/user/flags/get/"]
+});
